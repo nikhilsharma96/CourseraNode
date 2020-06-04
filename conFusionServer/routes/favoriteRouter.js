@@ -105,7 +105,7 @@ favoriteRouter.route('/:dishId')
             .then((favorite)=>{
                 console.log('favorite created! ',favorite);
                 res.statusCode=200;
-                res.setHeader=('Content-Type','application/json');
+                res.setHeader('Content-Type','application/json');
                 res.json(favorite);
             },(err)=>{
                 next(err);
